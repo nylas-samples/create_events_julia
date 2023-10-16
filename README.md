@@ -9,14 +9,18 @@ Install the following packages into Julia
 - HTTP
 - JSON
 - DotEnv
+- Dates
+- TimeZones
 
 ### Gather environment variables
 
 You'll need the following values:
 
 ```text
-ACCESS_TOKEN=<ACCESS_TOKEN>
+API_KEY_V3=<V3 API KEY>
 CALENDAR_ID=<CALENDAR_ID>
+GUEST_EMAIL=<GUEST EMAIL>
+GUEST_NAME=<GUEST NAME>
 ```
 
 Add the above values to a new `.env` file:
@@ -30,11 +34,10 @@ $ touch .env # Then add your env variables
 Run the app:
 
 ```bash
-$ julia CreateEvent.jl
+$ julia CreateEvent_V3.jl
 ```
 
 When you run it, it will display the newly created event
-
 
 ## Learn more
 
